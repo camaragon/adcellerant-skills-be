@@ -4548,5 +4548,7 @@ const advertisingData = [
     platform: "Twitter",
     impressions: 740,
     clicks: 21,
-  },
+  }
 ];
+
+module.exports = advertisingData;
