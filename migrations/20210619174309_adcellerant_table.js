@@ -7,6 +7,7 @@ exports.up = function(knex) {
       table.string('platform').notNullable();
       table.integer('impressions').notNullable();
       table.integer('clicks').notNullable();
+      table.timestamps(true, true);
   })
 };
 
