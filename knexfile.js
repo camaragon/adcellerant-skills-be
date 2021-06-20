@@ -3,11 +3,12 @@
 module.exports = {
 
   development: {
-    client: 'postgresql',
+    client: 'pg',
     connection: {
+      host: 'localhost',
       database: 'adcellerant',
       user:     'me',
-      password: 'password'
+      password: ''
     },
     pool: {
       min: 2,
@@ -15,23 +16,10 @@ module.exports = {
     },
     migrations: {
       directory: './migrations'
+    },
+    seeds: {
+      directory: './seeds'
     }
   }
-
-  // production: {
-  //   client: 'postgresql',
-  //   connection: {
-  //     database: 'my_db',
-  //     user:     'username',
-  //     password: 'password'
-  //   },
-  //   pool: {
-  //     min: 2,
-  //     max: 10
-  //   },
-  //   migrations: {
-  //     tableName: 'knex_migrations'
-  //   }
-  // }
 
 };
