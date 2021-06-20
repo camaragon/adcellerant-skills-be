@@ -7,12 +7,16 @@ const cors = require('cors');
 
 app.use(cors());
 
-// app.listen(process.env.PORT || 3001);
+const PORT = process.env.PORT || 3001;
 
-// app.locals.title = 'Adcellerant Skills Assessment';
+app.listen(PORT, () => {
+    console.log(`Server is running on PORT: ${PORT}`);
+});
+
+app.locals.title = 'Adcellerant Skills Assessment';
 
 app.get('/', (req, res) => {
-    res.send('This is the Adcellerant Skills Assessment API');
+    res.send('This is the Adcellerant Skills Assessment API by Cameron Aragon');
 });
 
 app.get('/api/v1/ads', async (req, res) => {
@@ -23,10 +27,4 @@ app.get('/api/v1/ads', async (req, res) => {
     } catch(error) {
         res.status(500).json({ error })
     }
-});
-
-const PORT = 3001;
-
-app.listen(PORT, () => {
-    console.log(`Server is running on PORT: ${PORT}`);
 });
