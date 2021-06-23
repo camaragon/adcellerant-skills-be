@@ -6,9 +6,10 @@ module.exports = {
     client: 'pg',
     connection: {
       host: 'localhost',
-      database: 'adcellerant',
-      user:     'me',
-      password: ''
+      database: 'postgres',
+      user:     'postgres',
+      password: 'password',
+      port: 1234
     },
     pool: {
       min: 2,
@@ -20,6 +21,6 @@ module.exports = {
     seeds: {
       directory: './seeds'
     }
-  }
+  } 
 
 };
