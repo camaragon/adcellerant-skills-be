@@ -56,7 +56,6 @@ $ docker run -it --rm \
 ```
 <br>
 To run the backend use: `docker run -p 3002:3002 -d <container-name>`
-<br>
 ![Table Screenshot](https://user-images.githubusercontent.com/69489633/123033064-5808c880-d3a4-11eb-9541-cbc45b0f8cea.png)
 ![Chart Screenshot](https://user-images.githubusercontent.com/69489633/123033141-78d11e00-d3a4-11eb-8303-4c655245145d.png)
 ![Table Screenshot](https://user-images.githubusercontent.com/69489633/123033217-9dc59100-d3a4-11eb-81f7-7a0a0fa833a8.png)
